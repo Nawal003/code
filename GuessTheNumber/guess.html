@@ -13,11 +13,20 @@
         <section>
             <h1>Guess the Number!</h1>
             <h2>Entrez un nombre entre 0 et 10</h2>
-            <input type="number">
-            <button type="submit">Guess</button>
+            <h3></h3>
+            <input type="number" max="10">
+            <button type="submit" id="guess" onclick="afficherEssai()">Guess</button>
+            <button type="reset" id="reset" onclick="reset">Play Again</button>
+        </section>
+        <section id="pop-up">
+            <p>Voulez-vous rejouer?</p>
+            <div id="wrapperBtn">
+                <button type="submit" id="yes">Oui</button>
+                <button type="submit" id="no">Non</button>
+            </div>
         </section>
     </main>
-<script src="./guess.js"></script>
+    <script src="./guess.js"></script>
 </body>
 
 </html>
